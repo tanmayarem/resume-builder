@@ -16,7 +16,7 @@ A beginner-friendly web app that generates ATS-friendly resumes and cover letter
 
 ## Prerequisites
 - Node.js (LTS recommended)
-- A Groq API key: https://console.groq.com/ (keep it private)
+- A Groq API key: https://console.groq.com/ (store it privately )
 
 ## Setup (local)
 ```bash
