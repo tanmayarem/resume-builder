@@ -41,10 +41,10 @@ npm start
   - Body (JSON): `{ name, email, education, skills, projects, experience? }`
   - Returns: `{ resumeText, coverLetter, raw }`
 
-## Tips
+## Note
 - Don’t commit `.env` (API key). `.gitignore` already covers it.
 - If output looks truncated, check server logs and ensure `GROQ_API_KEY` is set.
-- For a PDF, use browser “Print to PDF” or add a client-side export later.
+- For a PDF, use browser “Print to PDF” or add a client-side export later, will provide proper resume not just content
 
 ## Project Structure
 ```
