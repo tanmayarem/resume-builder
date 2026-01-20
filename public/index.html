@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Resume &amp; Portfolio Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <h1>AI Resume &amp; Portfolio Builder</h1>
+        <p class="subtitle">
+          Beginner-friendly tool to generate an ATS-friendly resume and cover letter.
+        </p>
+      </header>
+
+      <main class="main-content">
+        <section class="form-section">
+          <div class="section-header">
+            <h2>📝 Enter Your Details</h2>
+            <p class="section-description">Fill in your information to generate a professional resume</p>
+          </div>
+          <form id="resume-form">
+            <div class="form-group">
+              <label for="name">
+                <span class="label-icon">👤</span>
+                Name<span class="required">*</span>
+              </label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">
+                <span class="label-icon">✉️</span>
+                Email<span class="required">*</span>
+              </label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="education">
+                <span class="label-icon">🎓</span>
+                Education<span class="required">*</span>
+              </label>
+              <textarea
+                id="education"
+                name="education"
+                rows="3"
+                placeholder="e.g. B.Tech in Computer Science, XYZ University, 2022"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="skills">
+                <span class="label-icon">💻</span>
+                Skills (comma-separated)<span class="required">*</span>
+              </label>
+              <textarea
+                id="skills"
+                name="skills"
+                rows="2"
+                placeholder="e.g. JavaScript, React, Node.js, SQL"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="projects">
+                <span class="label-icon">🚀</span>
+                Projects<span class="required">*</span>
+              </label>
+              <textarea
+                id="projects"
+                name="projects"
+                rows="4"
+                placeholder="Briefly describe your main academic or personal projects."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="experience">
+                <span class="label-icon">💼</span>
+                Experience (optional)
+              </label>
+              <textarea
+                id="experience"
+                name="experience"
+                rows="3"
+                placeholder="Internships, part-time jobs, volunteering, etc."
+              ></textarea>
+            </div>
+
+            <button type="submit" id="generate-btn">
+              <span class="btn-text">✨ Generate Resume</span>
+              <span class="btn-loader" style="display: none;">⏳ Generating...</span>
+            </button>
+            <p id="status" class="status"></p>
+          </form>
+        </section>
+
+        <section class="output-section">
+          <div class="output-header">
+            <h2>📄 Generated Resume</h2>
+            <button id="copy-resume-btn" class="copy-btn" title="Copy Resume">
+              📋 Copy
+            </button>
+          </div>
+          <div class="output-wrapper">
+            <pre id="resume-output" class="output-box"></pre>
+          </div>
+
+          <div class="output-header" style="margin-top: 2rem;">
+            <h2>✍️ Generated Cover Letter</h2>
+            <button id="copy-cover-btn" class="copy-btn" title="Copy Cover Letter">
+              📋 Copy
+            </button>
+          </div>
+          <div class="output-wrapper">
+            <pre id="cover-letter-output" class="output-box"></pre>
+          </div>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <p>
+          Tip: You can copy the generated text into your own document editor to format it further.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
